@@ -1,0 +1,23 @@
+#include <iostream>
+
+
+int main()
+{
+	int n, m;
+	std::cout << "Input n, m (type int): \n";
+	std::cin >> n >> m;
+	if (n && m) std::cout << n << " && " << m << " is true\n";
+	else std::cout << n << " && " << m << " is false\n";
+	if (n & m) std::cout << n << " & " << m << " is true\n";
+	else std::cout << n << " & " << m << " is false\n";
+	std::cout << "-----------------------------\n";
+	if (n || m) std::cout << n << " || " << m << " is true\n";
+	else std::cout << n << " || " << m << " is false\n";
+	if (n | m) std::cout << n << " | " << m << " is true\n";
+	else std::cout << n << " | " << m << " is false\n";
+	std::cout << "-----------------------------\n";
+	if (~m) std::cout << "~" << m << " is true\n";
+	else std::cout << "~" << m << " is false\n";
+	if (!m) std::cout <<"!" << m << " is true\n";
+	else std::cout << "!" << m << " is false\n";
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+
+
+int main()
+{
+	unsigned int x, n;
+	std::cout << "input int X ";
+	std::cin >> x;
+	std::cout << "input bit's number (0 - 31) ";
+	std::cin >> n;
+	std::cout << ((x >> n) & 1);
+}

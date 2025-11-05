@@ -1,0 +1,20 @@
+#include <iostream>
+
+
+int main()
+{
+	unsigned int x;
+	int k;
+	std::cout << "input int X ";
+	std::cin >> x;
+	std::cout << "input bit's number which needs to be changed to 0 (0 - 31) ";
+	std::cin >> k;
+
+	unsigned int mask = (1 << k);
+
+	x = x ^ mask;
+	std::cout << "Changed X:" << std::endl;
+	std::cout << std::dec << x << " in dec" << std::endl;
+	std::cout << std::oct << x << " in oct" << std::endl;
+	std::cout << std::hex << x << " in hex" << std::endl;
+}
