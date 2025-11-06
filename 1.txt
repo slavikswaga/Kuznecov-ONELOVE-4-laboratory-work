@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int main() 
+{
 	unsigned int n, x;
 	std::cout << "Input int num (0 <= num <= 31): " << std::endl;
 	std::cin >> n;
