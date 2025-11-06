@@ -14,7 +14,7 @@ int main()
 	unsigned int mask = ~0;
 
 	unsigned int maskx = mask << k;
-	unsigned int masky = mask >> (32 - k);
+	unsigned int masky = mask >> (sizeof(y)*8 - k);
 
 	unsigned newx = x & maskx;
 	unsigned newy = y & masky;

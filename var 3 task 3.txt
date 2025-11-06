@@ -6,8 +6,8 @@
 int main()
 {
 	uint8_t n = 0;
-	uint8_t mask1 = 192; //1100 0000 в программе
-	uint8_t mask2 = 3; //0000 0011 в программе
+	uint8_t mask1 = 0b11000000;
+	uint8_t mask2 = 0b00000011;
 	for (int i = 0; i < 7; i++) {
 		n = mask1 | n | mask2; // объединяем "гуляющие 11"
 		mask1 >>= 1; // сдвигаем 11
