@@ -9,12 +9,10 @@ int main()
 	maxcount = 0;
 	bool flag = false;
 	std::cin >> std::hex >> n;
-	for (unsigned int i = 0; i < 32; i++) {
+	for (unsigned int i = 0; i < sizeof(n)*8; i++) {
 		mask = 1 << i;
 		if ((mask & n) == 0)
 			flag = true; // Нашли ноль - включаем флаг
-		if (i == 31 && ((mask & n) == 0))
-			flag = false;// Особый случай для последнего бита
 		if (flag) {
 			if (mask & n) {
 				count += 1;// Считаем единицы когда флаг включен
